@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite scroll</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <p class="go-back"><a href="index.html" class="ref-go-back"> <-- </a></p>
+    <form class="search-form" id="search-form">
+      <div class="container">
+        <input
+          type="text"
+          name="searchQuery"
+          class="search-form__input"
+          placeholder="Search images..."
+          autocomplete="off"
+          autofocus
+        />
+        <button class="submin-btn" type="submit">
+          <img
+            class="search-icon"
+            src="./images/icon-search.svg"
+            alt="search"
+          />
+        </button>
+      </div>
+    </form>
+
+    <div class="gallery"></div>
+
+    <script src="./js/02-infinite-scroll.js" type="module"></script>
+  </body>
+</html>
